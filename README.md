@@ -18,12 +18,12 @@ lokalni! zaloha vsech databazi jedne postgresql instance + metriky do promethea
  
 ## pouziti
 
-jako defaultni postgresql user(=`postgres` pro debian) spust
+jako defaultni postgresql user(=`postgres` pro debian) spust<br>
 `pgbackuper.sh [<cilovy adresar>] [<soubor s prometheus metrikama>]`
 
 defaults:
-- <cilovy adresar> - `/backups`
-- <soubor s prometheus metrikama> - `/var/metrics/pg_backuper.prom`
+- `<cilovy adresar>` = `/backups`
+- `<soubor s prometheus metrikama>` = `/var/metrics/pg_backuper.prom`
 
 
 ## konfigurace cronu
@@ -41,9 +41,9 @@ defaults:
 
 ## metriky
 
-pgbackuper_size - velikost jedne zalohy databaze v bytech
-pgbackuper_success - je zaloha kompletni (1 = ano, 0 = ne)
-pgbackuper_runtime - ja dlouho trvalo zazalohovani jedne DB v sec
+`pgbackuper_size` - velikost jedne zalohy databaze v bytech<br>
+`pgbackuper_success` - je zaloha kompletni (1 = ano, 0 = ne)<br>
+`pgbackuper_runtime` - ja dlouho trvalo zazalohovani jedne DB v sec<br>
 
 ## example
 
